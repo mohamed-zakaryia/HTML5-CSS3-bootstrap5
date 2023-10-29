@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 70px;
+}
+.navbar {
+  background-color: rgba(232, 232, 232, 0.5) !important ;
+  max-height: 70px !important ;
+}
+@media (max-width: 1000px) {
+  .logo {
+    margin-top: -8px;
+  }
+  .home,
+  .location,
+  .Foods {
+    color: #fff !important;
+  }
+  .Foods {
+    border: none !important;
+  }
+  .search,
+  .login {
+    color: #fff;
+    background-color: #11ad4a;
+  }
+}
+@media (max-width: 567px) {
+  .Tomero,
+  .home,
+  .location {
+    text-shadow: 2px 2px 10px rgb(4, 109, 53) !important;
+  }
+}
+.Tomero:hover,
+.home:hover,
+.location:hover {
+  text-shadow: 2px 2px 10px rgb(4, 109, 53);
+}
+.Foods {
+  transition: 0.3s;
+}
+.Foods:hover {
+  background-color: rgb(9, 156, 78);
+  color: #fff;
+}
+.welcome-to-web {
+  background-color: #d8f3dc;
+}
+.welcome-to-web > h3,
+p {
+  padding-left: 50px;
+}
+.welcome-to-web > h3 {
+  padding-top: 20px;
+  color: #198754 !important;
+}
+.welcome-to-web > p {
+  padding-bottom: 5px;
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.welcome-to-web > button:hover {
+  background-color: rgba(26, 25, 25, 0.125);
+}
+.hr-1 {
+  border: 1px solid #1b4332;
+}
+.popular > p {
+  background-color: #40916c;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 0;
+  border-radius: 15px;
+}
+#section3 > .backattachment {
+  background-image: url(../imgs/steak.webp);
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.popular2 > p {
+  background-color: #74c69d !important;
+  color: #000000;
+}
+.resturant {
+  position: relative;
+}
+.resturant::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #198754;
+  transition: 0.7s;
+  z-index: -1;
+}
+.resturant:hover::after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.resturant::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #198754;
+  transition: 0.7s;
+  z-index: -1;
+}
+.resturant:hover::before {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 0.3;
+  z-index: 1;
+}
+.resturant > div {
+  z-index: 2;
+}
+.news {
+  box-shadow: 1px 1px 10px 10px #52b788;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+.news-title {
+  color: #007f5f;
+  font-size: 2rem;
+}
+.underline {
+  background-color: #40916c;
+  width: 70px;
+  height: 5px;
+  margin-left: 50px;
+  margin-top: 5px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.news:hover .underline {
+  width: 120px;
+}
+.news-img {
+  transition: 0.5s;
+}
+.news:hover .news-img {
+  transform: perspective(1000px) rotateY(20deg) rotateX(-10deg) translateZ(50px);
+}
+.news-content1,
+.news-content2 {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #93b1a7;
+}
+.news-content1 {
+  cursor: pointer;
+}
+@media (max-width: 767.5px) {
+  .news {
+    max-height: 497px;
+    overflow: hidden;
+  }
+  .news-img {
+    max-height: 300px;
+  }
+  .news2 {
+    display: flex;
+    flex-direction: column-reverse;
+    transform: rotateX(180deg)
+  }
+  .news-img2 , .newsrot {
+    transform: rotateX(180deg)
+  }
+}
+

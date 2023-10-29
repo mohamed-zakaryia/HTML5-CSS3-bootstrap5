@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web For Show Resturants" />
+    <meta name="developer" content="mohamed zakaryia" />
+    <!-- this for the name of project -->
+    <title>Tomero</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" href="imgs/Logo.ico" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              style="
+                box-shadow: 1px 1px 2px 2px rgb(110, 110, 110);
+                width: 60px;
+                background-size: cover;
+              "
+              src="/imgs/Logo.ico"
+              alt="Avatar Logo"
+              class="rounded-pill logo"
+            />
+          </a>
+          <a class="navbar-brand text-success pe-2 border-end Tomero" href="#"
+            ><span class="text-dark">To</span>mero</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home text-lg text-success" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success location" href="#">Location</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-success border border-success rounded-pill ps-2 Foods"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Foods
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-success" href="#">Burgers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-success" href="#">Pasta</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-success" href="#">Pizza</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-success" href="#">crepes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success location" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-success search me-2" type="submit">
+                Search
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success login"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container-fluid">
+              <div class="form-login mb-3">
+                <h5>LogIn</h5>
+              </div>
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input type="email" class="form-control" />
+                  <div class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Check me out</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <div class="modal-footer mt-3">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section1 -->
+    <section id="sec-1">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./imgs/burger.webp"
+              class="d-block w-100"
+              style="
+                min-height: 500px;
+                max-height: 550px;
+                background-size: cover;
+              "
+              draggable="false"
+              alt="burger"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Burger</h5>
+              <p>We Make Smash burger.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/streps.webp"
+              style="min-height: 500px; max-height: 550px"
+              class="d-block w-100"
+              alt="chicken"
+              draggable="false"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Chicken</h5>
+              <p>We Make An Awesome chicken.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/pasta.avif"
+              style="min-height: 500px; max-height: 550px"
+              class="d-block w-100"
+              alt="pasta"
+              draggable="false"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Pasta</h5>
+              <p>We Make An Itailian Pasta.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/pizza.webp"
+              style="min-height: 500px; max-height: 550px"
+              class="d-block w-100"
+              alt="pasta"
+              draggable="false"
+            />
+            <div class="carousel-caption d-block">
+              <h5>Pizza</h5>
+              <p>We Make An Itailian Pizza.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="welcome-to-web">
+        <h3>Welcome</h3>
+        <p>
+          Are you planning to visit resturant? We offer the awesome foods, like
+          Burgers, Pizza, Pasta, and Crepe, we will take care of all your needs.
+        </p>
+        <button
+          href="#"
+          class="btn btn-light text-success mb-3 ms-5"
+          style="width: 200px; font-size: 20px; border-radius: 10px"
+        >
+          LearnMore
+        </button>
+      </div>
+    </section>
+    <hr class="hr-1" />
+    <!-- section2 -->
+    <section id="sec-2">
+      <div class="popular">
+        <p>Popular resturants In Egypt</p>
+      </div>
+      <!-- accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              style="background: #74c69d; border-radius: 15px"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+            >
+              Noble House
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Modern Chinese cuisine where taste surpasses expectation;
+              partnered by three Teppanyaki grills, the restaurant menu reflects
+              mainly Cantonese cuisine but not neglecting other reigns. Rich and
+              tasteful black bean beef is the Chef's specialty making it
+              difficult to resist. The authentic Chinese deco can only enhance
+              the atmosphere and contribute to the fine dining experience. Dress
+              code: Smart casual, Family Friendly
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              style="background: #f7f7f7; border-radius: 15px"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+            >
+              Saigon Restaurant & Lounge
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Fairmont Nile City’s Pan-Asian fine dining restaurant offers a
+              unique sharing concept with a signature twist of Asian cuisine for
+              an unmatched culinary experience. Elegant interiors and stunning
+              Nile views set the stage for a unique experience at Saigon
+              Restaurant. The Lounge is the perfect location for an intimate
+              get-together while enjoying some of the city's best live
+              entertainment. Dress Code: Smart-Casual/Semi-Formal *Shorts and
+              slippers are not allowed
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              style="background: #74c69d; border-radius: 15px"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+            >
+              Raj
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Named after the “King of India”, Raj offers classic Indian cuisine
+              with a modern touch. Savor the creations of tender meat and
+              seafood directly from the hot embers of the tandoor, accompanied
+              with soft, fresh, and hot naans, and Rotis. All in an inviting
+              atmosphere complemented by an open kitchen for a live cooking
+              experience. Family Friendly
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cardtitle -->
+      <div class="container">
+        <!-- card1 -->
+        <div class="card-1">
+          <h2 class="text-center pt-5 pb-3">Turkish Foods</h2>
+        </div>
+        <div class="card my-3" style="max-width: 100%">
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <div class="card-body">
+                <h5
+                  class="card-title pt-5 ps-5 text-success"
+                  style="font-size: 27px"
+                >
+                  Turkish Food
+                </h5>
+                <p
+                  style="font-size: 20px; letter-spacing: 1.5px"
+                  class="card-text"
+                >
+                  Delivery, Takeout, Outdoor Seating, Seating, Parking
+                  Available, Television, Accepts Credit Cards, Table Service,
+                  Reservations, Street Parking, Accepts Mastercard, Accepts
+                  Visa, Gift Cards Available.
+                </p>
+                <p class="card-text pt-5 d-none d-md-block">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <button
+                  class="d-none d-xl-block btn btn-success text-dark ms-5"
+                  style="width: 250px; font-size: 20px; border-radius: 10px"
+                >
+                  LearnMore
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/25/0a/b0/26/authentic-turkish-food.jpg"
+                class="img-fluid rounded-start w-100 h-100"
+                alt="food"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card-2">
+          <h2 class="text-center pt-5 pb-3">Menus</h2>
+        </div>
+        <div class="card my-3" style="max-width: 100%">
+          <div class="row g-0">
+            <div class="col-md-7">
+              <img
+                src="./imgs/burger,pepsi.avif"
+                style="max-height: 600px"
+                class="img-fluid rounded-start w-100 h-100"
+                alt="burger"
+                draggable="false"
+              />
+            </div>
+            <div class="col-md-5">
+              <div class="card-body">
+                <h5
+                  class="card-title ms-5"
+                  style="font-size: 27px; color: #588157"
+                >
+                  OUR MENUS
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-size: 17px; letter-spacing: 1.5px"
+                >
+                  Our diverse menu boasts a fusion of classic brunch favorites
+                  and innovative dishes. Whether you're craving the timeless
+                  perfection of a stack fluffy pancakes drizzled in real maple
+                  syrup or tempted by our signature avocado toast topped with
+                  poached eggs, every bite is an experience to remember.
+                </p>
+                <button
+                  class="btn ms-5 text-light"
+                  style="background-color: #588157; width: 150px"
+                >
+                  View Menus
+                </button>
+                <div
+                  class="alert alert-success ms-5 mt-5 d-none d-xl-block"
+                  role="alert"
+                >
+                  You Can Rate Us With
+                  <a href="#" class="alert-link">This Link</a>. Give it a click
+                  if you like.
+                </div>
+                <div
+                  class="alert alert-danger ms-5 mt-3 d-none d-xl-block"
+                  role="alert"
+                >
+                  You Can Follow Us With
+                  <a href="#" class="alert-link">This Link</a>. Give it a click
+                  if you like.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-1" />
+    <!-- section3 -->
+    <section id="section3">
+      <div class="backattachment"></div>
+      <div class="popular popular2">
+        <p class="paragraph-popular">Famous Dishes In Egypt</p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/pizza-bar.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">pizza</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/cake-cafe.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">Coffee</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/noble-house-restaurant.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">Chickens</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/meat.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">Meat</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/icecream.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">IceCream</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-0 mt-lg-5 mt-md-5">
+            <div class="card resturant" style="max-width: 100%">
+              <img
+                src="./imgs/ovio.webp"
+                draggable="false"
+                style="height: 250px"
+                class="card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="card-title ms-5 text-success">OVIO</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quidem quam id, alias odit provident rem porro dignissimos.
+                </p>
+                <a href="#" class="btn btn-success ms-5">Offer Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-1" />
+    <!-- section4 -->
+    <section id="section4">
+      <div class="container">
+        <div class="news-header">
+          <h3 style="font-size: 30px" class="text-center text-success mt-5 mb-3">
+            New Resturants
+          </h3>
+        </div>
+        <!-- card1 -->
+        <div
+          class="news card mb-3 border-0"
+          style="max-width: 100%; background: #f4fcec"
+        >
+          <div class="row g-0">
+            <div class="col-md-4 news-img">
+              <img
+                src="./imgs/shish-kebab1.webp"
+                draggable="false"
+                class="img-fluid rounded-start w-100 h-100 rounded-3"
+                alt="kebab"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-5">
+                <h5
+                  style="margin-bottom: -1px"
+                  class="news-title card-title ms-5"
+                >
+                  Zooba
+                </h5>
+                <div class="news-title-icon ms-5">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span style="font-size: 15px">mon,oct 28th 2023</span>
+                </div>
+                <div class="underline"></div>
+                <p class="card-text mt-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
+                  eius impedit? Voluptatum adipisci minus amet facere fugit,
+                  excepturi dolores officia cum, obcaecati doloribus itaque nemo
+                  ratione aspernatur. Ut officiis ullam nisi quae magni modi
+                  quam fuga sequi, accusantium laboriosam! Sapiente quas amet
+                  cum autem similique nam nostrum doloremque, eligendi aut.
+                </p>
+                <div class="ms-5 mt-5">
+                  <span class="news-content1 me-2">
+                    <i class="fas fa-play"></i>
+                    <span>play Episode</span>
+                  </span>
+                  <span class="news-content2">
+                    <i class="fas fa-clock"></i>
+                    <span>30 mins</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div
+        class="news news2 card mt-5 mb-3 border-0"
+        style="max-width: 100%; background: #f4fcec"
+      >
+        <div class="row g-0">
+          <div class="col-md-8 newsrot">
+            <div class="card-body p-5">
+              <h5
+                style="margin-bottom: -1px"
+                class="news-title news-title2 card-title ms-5"
+              >
+              Kazaz Restaurant
+              </h5>
+              <div class="news-title-icon ms-5">
+                <i class="fas fa-calendar-alt"></i>
+                <span style="font-size: 15px">mon,oct 28th 2023</span>
+              </div>
+              <div class="underline"></div>
+              <p class="card-text mt-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
+                eius impedit? Voluptatum adipisci minus amet facere fugit,
+                excepturi dolores officia cum, obcaecati doloribus itaque nemo
+                ratione aspernatur. Ut officiis ullam nisi quae magni modi
+                quam fuga sequi, accusantium laboriosam! Sapiente quas amet
+                cum autem similique nam nostrum doloremque, eligendi aut.
+              </p>
+              <div class="ms-5 mt-5">
+                <span class="news-content1 me-2">
+                  <i class="fas fa-play"></i>
+                  <span>play Episode</span>
+                </span>
+                <span class="news-content2">
+                  <i class="fas fa-clock"></i>
+                  <span>30 mins</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 news-img news-img2">
+            <img
+              src="./imgs/chicken-of-beef-take.webp"
+              draggable="false"
+              class="img-fluid rounded-start w-100 h-100 rounded-3"
+              alt="chicken-of-beef"
+            />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- footer -->
+      <footer class="bg-dark text-center text-white mt-5">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100069317590432" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fas fa-envelope"></i>
+            </a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mohamed-zakaria-8833a3252/" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/mohamed-zakaryia" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="#">Tomero.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
