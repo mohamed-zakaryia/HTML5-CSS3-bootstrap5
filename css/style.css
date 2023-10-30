@@ -192,4 +192,8 @@ p {
   .newsrot {
     transform: rotateX(180deg);
   }
+  .news:hover .news-img2 {
+    transform: perspective(1000px) rotateY(20deg) rotateX(170deg)
+      translateZ(50px);
+  }
 }
