@@ -8,7 +8,7 @@ header {
 }
 .navbar {
   background-color: rgba(232, 232, 232, 0.5) !important ;
-  max-height: 70px !important ;
+  height: 70px !important;
 }
 @media (max-width: 1000px) {
   .logo {
@@ -186,10 +186,10 @@ p {
   .news2 {
     display: flex;
     flex-direction: column-reverse;
-    transform: rotateX(180deg)
+    transform: rotateX(180deg);
   }
-  .news-img2 , .newsrot {
-    transform: rotateX(180deg)
+  .news-img2,
+  .newsrot {
+    transform: rotateX(180deg);
   }
 }
-
